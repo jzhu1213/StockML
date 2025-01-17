@@ -13,7 +13,9 @@ pip install StockML
 ## Usage
 
 ```python
-stock_symbol = 'AAPL'  # Choose your stock symbol here
+stock_symbol = 'AAPL'  # Specify your stock symbol
+start_date = '2024-01-01' # Specify your start date
+end_date = '2024-12-30' # Specify your end date
 
 python3 stock.py
   - Creates LSTM Model for selected stock

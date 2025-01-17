@@ -20,6 +20,10 @@ end_date = '2024-12-30' # Specify your end date
 python3 stock.py
   - Creates LSTM Model for selected stock
 
+Example:
+
+![AAPL 2024](StockML/plots/AAPL.png)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first

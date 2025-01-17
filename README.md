@@ -22,7 +22,7 @@ python3 stock.py
 
 Example:
 
-![AAPL 2024](plots/AAPL.png)
+![AAPL 2024](https://github.com/jzhu1213/StockML/raw/plots/AAPL.png)
 
 ## Contributing
 

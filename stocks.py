@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
 
-# Function to load and preprocess stock data
+# Function to load and preproccess stock data
 def load_stock_data(stock_symbol, start_date, end_date):
     data = yf.download(stock_symbol, start=start_date, end=end_date)
     
@@ -62,7 +62,7 @@ def run_model(stock_symbol, start_date, end_date):
 # Run the model for a specific stock and date range
 if __name__ == "__main__":
     stock_symbol = 'AAPL'  # Specify your stock symbol
-    start_date = '2024-01-01'
-    end_date = '2024-12-30'
+    start_date = '2024-01-01' # Specify your start date
+    end_date = '2024-12-30' # Specify your end date
     
     mse = run_model(stock_symbol, start_date, end_date)

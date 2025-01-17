@@ -22,7 +22,7 @@ python3 stock.py
 
 Example:
 
-![My Image](https://github.com/jzhu1213/StockML/blob//plots/AAPL.png)
+![My Image](https://github.com/jzhu1213/StockML/blob/main/plots/AAPL.png)
 
 ## Contributing
 

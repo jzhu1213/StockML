@@ -12,7 +12,6 @@ pip install StockML
 
 ## Usage
 
-```python
 stock_symbol = 'AAPL'  # Specify your stock symbol
 start_date = '2024-01-01' # Specify your start date
 end_date = '2024-12-30' # Specify your end date

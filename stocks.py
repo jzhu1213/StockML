@@ -54,10 +54,19 @@ def run_model(stock_symbol, start_date, end_date):
     plt.xlabel("Date")
     plt.ylabel("Price (USD)")
     plt.legend()
+
+    metrics_text = (
+        f"Next Day Prediction: {next_day_prediction:.2f} USD\n"
+        f"Mean Squared Error: {mse:.4f}\n"
+        f"Mean Absolute Error: {mae:.4f}\n"
+        f"R² Score: {r2:.4f}"
+    )
     
     plt.text(0.05, 0.85, f"Next Day Prediction: {next_day_prediction:.2f} USD", 
              transform=plt.gca().transAxes, fontsize=12, color='red', bbox=dict(facecolor='white', alpha=0.8))
 
+    plt.grid(True)
+    plt.tight_layout()
     plt.show()
 
     return mse
@@ -69,3 +78,4 @@ if __name__ == "__main__":
     end_date = '2024-12-30' # Specify your end date
     
     mse = run_model(stock_symbol, start_date, end_date)
+    print(f"Predicted next closing price for {stock_symbol}: ${next_day_price:.2f}")

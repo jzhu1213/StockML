@@ -40,6 +40,8 @@ def run_model(stock_symbol, start_date, end_date):
     y_pred = linear_model.predict(X_test)
     
     mse = mean_squared_error(y_test, y_pred)
+    mae = mean_absolute_error(y_test, y_pred)
+    r2 = r2_score(y_test, y_pred)
     
     latest_data = data.iloc[-1][['Prev Close', 'MA_5', 'MA_10']].values.reshape(1, -1)
     latest_data_scaled = scaler.transform(latest_data)

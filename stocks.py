@@ -12,11 +12,15 @@ def load_stock_data(stock_symbol, start_date, end_date):
     data = yf.download(stock_symbol, start=start_date, end=end_date)
     
     data['Prev Close'] = data['Close'].shift(1)
-    
     data['MA_5'] = data['Close'].rolling(window=5).mean()
     data['MA_10'] = data['Close'].rolling(window=10).mean()
-    
+
+    data['Return'] = data['Close'].pct_change()
+    data['Volatility'] = data['Return'].rolling(window=5).std()
+    data['High_Low_Spread'] = data['High'] - data['Low']
+    data['Volume_Change'] = data['Volume'].pct_change()
     data.dropna(inplace=True)
+    
     return data
 
 # Train and evaluate the Linear Regression model

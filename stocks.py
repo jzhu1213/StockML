@@ -78,4 +78,5 @@ if __name__ == "__main__":
     end_date = '2024-12-30' # Specify your end date
     
     mse = run_model(stock_symbol, start_date, end_date)
-    print(f"Predicted next closing price for {stock_symbol}: ${next_day_price:.2f}")
+    print(f"Predicted next closing price for {stock_symbol}: ${next_day_prediction:.2f}")
+

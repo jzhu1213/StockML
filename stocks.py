@@ -12,7 +12,7 @@ from alpha_vantage.timeseries import TimeSeries
 from alpha_vantage.fundamentaldata import FundamentalData
 import datetime
 
-ALPHA_VANTAGE_API_KEY = 'FGNGLNBTJ53IAAUF'
+ALPHA_VANTAGE_API_KEY = 'apikey'
 
 # --- Step 1: Technical Indicators ---
 def add_technical_indicators(df):

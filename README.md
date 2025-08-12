@@ -1,7 +1,6 @@
 # StockML
 
-Foobar is a Python library for dealing with word pluralization.
-
+Intro Machine Learning Project- Predict Future Stock Prices
 ## Installation
 
 Use the package manager [pip](url) to install StockML.

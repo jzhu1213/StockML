@@ -192,7 +192,7 @@ def run_models(stock_symbol, start_date, end_date):
 # --- Main Execution ---
 if __name__ == "__main__":
     stock_symbol = 'AAPL'
-    start_date = '2022-01-01'
+    start_date = '2024-01-01'
     end_date = '2024-12-31'
     try:
         next_day_pred_lr, next_day_pred_rf = run_models(stock_symbol, start_date, end_date)
